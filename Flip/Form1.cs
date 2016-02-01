@@ -52,6 +52,14 @@ namespace Flip
             cmbFlip.SelectedIndex = 0;
 
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.TopMost = true;
+            Log.AddEntry("form_load was init");
+        }
+
         private void Exit()
         {
             _shouldStop = false;
